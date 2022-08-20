@@ -21,9 +21,9 @@ const Navbar = () => {
                             <Typography color='#BBA055' sx={{ fontSize: '1.4rem', fontFamily: 'Righteous' }}> Recruitric</Typography>
                         </Stack>
                         <Stack direction='row' sx={{ display: { xs: 'none', md: 'flex' } }} color='#BBA055'>
-                            <Button variant='large' onClick={() => navigate('/')}>Home</Button>
-                            <Button variant='large' onClick={() => navigate('/features')}>Features</Button>
-                            <Button variant='large' onClick={() => navigate('/contact')}>Get in touch</Button>
+                            <Button variant='large' onClick={() => { navigate('/') }}>Home</Button>
+                            <Button variant='large' onClick={() => { navigate('/features') }}>Features</Button>
+                            <Button variant='large' onClick={() => { navigate('/contact') }}>Get in touch</Button>
                         </Stack>
                         {
                             !toggle ? <IconButton size='large' sx={{ color: '#BBA055', display: { xs: 'flex', md: 'none' } }}
@@ -42,10 +42,10 @@ const Navbar = () => {
             }>
                 <Outlet />
             </Box >
-            <Stack direction='column' sx={{ zIndex: '1', width: '100%', position: 'absolute', top: '5rem', right: '0', display: { xs: `${displayDrawer}`, md: 'none' } }} color='#BBA055'>
+            <Stack direction='column' sx={{ backgroundColor: '#000000', zIndex: '1', width: '100%', position: 'absolute', top: '5rem', right: '0', display: { xs: `${displayDrawer}`, md: 'none' } }} color='#BBA055'>
                 <Button variant='large' onClick={() => navigate('/')}>Home</Button>
-                <Button variant='large' onClick={() => navigate('/about')}>Features</Button>
-                <Button variant='large' onClick={() => navigate('/skills')}>Get in touch</Button>
+                <Button variant='large' onClick={() => navigate('/features')}>Features</Button>
+                <Button variant='large' onClick={() => navigate('/contact')}>Get in touch</Button>
             </Stack>
         </Fragment >
     )

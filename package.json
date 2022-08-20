@@ -15,7 +15,8 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "weex-percentage-circle": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "reactjs-percentage-circle": "^1.0.0"
   }
 }

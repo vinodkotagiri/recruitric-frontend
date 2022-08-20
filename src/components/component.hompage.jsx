@@ -17,7 +17,7 @@ const HomePage = () => {
                     <Button variant='outlined' sx={{ color: '#BBA055' }} endIcon={<ScienceRounded />} onClick={() => navigate('/process')}>Try Now</Button>
                 </Stack>
             </Stack>
-            <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+            <Box sx={{ display: { xs: 'none', md: 'flex' }, padding: '2.5rem' }}>
                 <img src={HeroImg} alt='hero-img' style={{ width: '100%' }} />
             </Box>
         </ Stack >
